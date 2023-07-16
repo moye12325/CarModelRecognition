@@ -24,7 +24,7 @@ print(resnet)
 
 # 定义损失函数和优化器
 criterion = nn.CrossEntropyLoss()
-optimizer = torch.optim.SGD(resnet.fc.parameters(), lr=0.001, momentum=0.9)
+optimizer = torch.optim.AdamW(resnet.fc.parameters(), lr=0.001 )
 
 
 # 示例训练过程
